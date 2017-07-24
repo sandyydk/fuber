@@ -3,7 +3,7 @@ package cab
 import (
 	"testing"
 )
-
+// Testing the cab package
 func TestGetCabs(t *testing.T) {
 	var cabs []Cab
 	InitializeCabs()
