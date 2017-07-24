@@ -52,7 +52,7 @@ func calculateBill(user user.User) (int64, int64) {
 	return billAmount, int64(totalDistance)
 }
 
-// BookCab Handler function to book a cab. Extra detail like user drop location is included in the structure which is not used as of now but can be used if necessary in the future
+// BookCab Handler function to book a cab.
 func BeginRide(w http.ResponseWriter, r *http.Request) {
 
 	// TO allow local testing , CORS when the UI connects from localhost:4200 to localhost:3200 of the server. Not needed if only testing using POSTMAN
@@ -113,7 +113,7 @@ func BeginRide(w http.ResponseWriter, r *http.Request) {
 		services.ErrorWithJSON(w, "No Cab Found", http.StatusBadRequest)
 	}
 }
-
+// Endpoint to finish the ride. Will calculate bill amount and return distance travelled using pythagoras theorem
 func EndRide(w http.ResponseWriter, r *http.Request) {
 
 	// TO allow local testing , CORS when the UI connects from localhost:4200 to localhost:3200 of the server. Not needed if only testing using POSTMAN
