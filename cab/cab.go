@@ -22,13 +22,13 @@ func InitializeCabs() {
 			ID: 1, Color: "pink", IsAvailable: true, Location: &location.Location{12, 100},
 		},
 		{
-			ID: 2, Color: "green", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 2, Color: "green", IsAvailable: true, Location: &location.Location{8, 100},
 		},
 		{
-			ID: 3, Color: "blue", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 3, Color: "blue", IsAvailable: true, Location: &location.Location{15, 100},
 		},
 		{
-			ID: 4, Color: "red", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 4, Color: "red", IsAvailable: true, Location: &location.Location{5, 100},
 		},
 		{
 			ID: 5, Color: "red", IsAvailable: true, Location: &location.Location{10, 100},
@@ -37,22 +37,22 @@ func InitializeCabs() {
 			ID: 6, Color: "grey", IsAvailable: true, Location: &location.Location{10, 100},
 		},
 		{
-			ID: 7, Color: "black", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 7, Color: "black", IsAvailable: true, Location: &location.Location{9, 120},
 		},
 		{
-			ID: 8, Color: "pink", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 8, Color: "pink", IsAvailable: true, Location: &location.Location{6, 150},
 		},
 		{
-			ID: 9, Color: "pink", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 9, Color: "pink", IsAvailable: true, Location: &location.Location{18, 110},
 		},
 		{
-			ID: 10, Color: "yellow", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 10, Color: "yellow", IsAvailable: true, Location: &location.Location{10, 80},
 		},
 		{
-			ID: 11, Color: "blue", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 11, Color: "blue", IsAvailable: true, Location: &location.Location{10, 105},
 		},
 		{
-			ID: 12, Color: "green", IsAvailable: true, Location: &location.Location{10, 100},
+			ID: 12, Color: "green", IsAvailable: true, Location: &location.Location{90, 140},
 		},
 	}
 }
