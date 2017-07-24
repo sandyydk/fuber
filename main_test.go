@@ -10,7 +10,7 @@ import (
 	"net/http/httptest"
 	"testing"
 )
-
+// Simulate http request here
 func executeRequest(req *http.Request) *httptest.ResponseRecorder {
 	rr := httptest.NewRecorder()
 	myRouter.ServeHTTP(rr, req)
@@ -23,7 +23,7 @@ func checkResponseCode(t *testing.T, expected, actual int) {
 		t.Errorf("Expected response code %d. Got %d\n", expected, actual)
 	}
 }
-
+// Testing the APIs
 func TestGetCabs(t *testing.T) {
 	initialize()
 	req, _ := http.NewRequest("GET", "/getcabs", nil)
@@ -39,7 +39,7 @@ func TestGetCabs(t *testing.T) {
 		t.Errorf("Expected a list of cabs for a response. Got error")
 	}
 }
-
+// Testing the action of booking a cab
 func TestBookCab(t *testing.T) {
 	initialize()
 	var userDetails = user.User{Pickup: location.Location{67, 100}}
@@ -57,7 +57,7 @@ func TestBookCab(t *testing.T) {
 	}
 
 }
-
+// Testing booking and and ending a cab ride
 func TestEndRide(t *testing.T) {
 	initialize()
 	var invalidUserDetails = user.User{Pickup: location.Location{67, 100}}
